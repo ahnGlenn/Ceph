@@ -19,6 +19,7 @@
 <br/>
 
 🔹 2. Ceph 설치 및 실습<br/>
+
 ✔ 로컬 환경에서 Ceph 클러스터 구축 (싱글 노드)
   - Vagrant + VirtualBox를 활용한 가상 환경 구축
   - Docker + Ceph 컨테이너 환경 활용
@@ -37,6 +38,7 @@
 
 🔹 3. Ceph API & 백엔드 개발<br/>
 Ceph를 활용한 개발을 위해 API 및 백엔드 연동 방법을 학습필요<br/>
+
 ✔ Ceph API 활용
   - Librados API (C++, Python, Go) → RADOS 기반 데이터 조작
   - Ceph RESTful API → 관리 및 모니터링
@@ -50,7 +52,7 @@ Ceph를 활용한 개발을 위해 API 및 백엔드 연동 방법을 학습필�
 <br/>
 
 🔹 4. Ceph 운영 및 성능 최적화<br/>
-실무에서는 Ceph의 성능을 최적화하고 운영하는 방법이 중요합니다.<br/>
+실무에서는 Ceph의 성능을 최적화하고 운영하는 방법이 중요.<br/>
 
 ✔ Ceph 운영 기초
   - Ceph 모니터링 (ceph status, ceph df, ceph osd tree)
@@ -66,6 +68,7 @@ Ceph를 활용한 개발을 위해 API 및 백엔드 연동 방법을 학습필�
 
 🔹 5. 실제 서비스와 Ceph 연동<br/>
 실무용 Ceph를 백엔드 개발과 연결하는 방법을 숙지필요<br/>
+
 ✔ 실제 서비스에서 Ceph 사용 사례
   - OpenStack과 Ceph 연동 (Cinder, Glance, Nova)
   - Kubernetes에서 Ceph RBD 및 CephFS 활용
