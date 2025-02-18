@@ -1,6 +1,7 @@
 # 🚀 Ceph 학습 로드맵
 
 🔹 1. Ceph 개념 이해<br/>
+
 ✔ Ceph의 핵심 개념
   - RADOS (Reliable Autonomic Distributed Object Store) → Ceph의 핵심 분산 스토리지 엔진
   - CRUSH 알고리즘 (Controlled Replication Under Scalable Hashing) → 데이터 배치 알고리즘
@@ -9,6 +10,7 @@
     - Monitor (MON): 클러스터 상태 관리 및 노드 인증
     - Metadata Server (MDS): CephFS(파일 시스템)에서 메타데이터 관리
     - RGW (RADOS Gateway): S3 API를 지원하는 Object Storage 서비스
+      
 ✔ Ceph가 지원하는 스토리지 유형
   - Object Storage (AWS S3와 유사)
   - Block Storage (AWS EBS와 유사)
@@ -21,9 +23,11 @@
   - Vagrant + VirtualBox를 활용한 가상 환경 구축
   - Docker + Ceph 컨테이너 환경 활용
   - Ceph-Ansible 또는 Ceph-Deploy를 이용한 설치
+    
 ✔ Ceph를 클러스터 환경에서 구축 (멀티 노드)
   - Ubuntu 서버 3대 이상에 Ceph 클러스터 구성
   - Ceph OSD, Monitor, MDS 배포 및 테스트
+    
 ✔ 실습 예제
   - rados bench 를 사용한 Ceph 성능 테스트
   - CephFS를 마운트하여 파일 시스템 활용
@@ -37,6 +41,7 @@ Ceph를 활용한 개발을 위해 API 및 백엔드 연동 방법을 학습필�
   - Librados API (C++, Python, Go) → RADOS 기반 데이터 조작
   - Ceph RESTful API → 관리 및 모니터링
   - Ceph RGW S3 API → AWS S3 호환 API를 활용한 객체 저장
+    
 ✔ 실습 프로젝트 예시
   - Python으로 Ceph RADOS에 직접 데이터 저장/읽기
   - Go로 S3 API를 사용하여 객체 업로드/다운로드 구현
@@ -51,6 +56,7 @@ Ceph를 활용한 개발을 위해 API 및 백엔드 연동 방법을 학습필�
   - Ceph 모니터링 (ceph status, ceph df, ceph osd tree)
   - 장애 복구 (ceph osd repair, ceph pg repair)
   - Ceph 튜닝 (osd_memory_target, filestore_xfs_extent 조정)
+    
 ✔ 고급 Ceph 성능 최적화
   - 블록 크기 및 PG 설정 최적화 (osd_pool_default_pg_num)
   - SSD vs HDD 환경에서의 성능 차이 분석
@@ -64,6 +70,7 @@ Ceph를 활용한 개발을 위해 API 및 백엔드 연동 방법을 학습필�
   - OpenStack과 Ceph 연동 (Cinder, Glance, Nova)
   - Kubernetes에서 Ceph RBD 및 CephFS 활용
   - 대규모 Object Storage 시스템 구축 사례 분석
+    
 ✔ 백엔드 애플리케이션 개발과 Ceph 연동
   - Django/Flask 백엔드에서 Ceph S3 API 활용
   - Java/Spring Boot에서 Ceph RBD를 블록 스토리지로 사용
