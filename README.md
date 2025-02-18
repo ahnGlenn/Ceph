@@ -1,6 +1,6 @@
 # 🚀 Ceph 학습 로드맵
 
-🔹 1. Ceph 개념 이해<hr>
+🔹 1. Ceph 개념 이해
 ✔ Ceph의 핵심 개념
  - RADOS (Reliable Autonomic Distributed Object Store) → Ceph의 핵심 분산 스토리지 엔진
  - CRUSH 알고리즘 (Controlled Replication Under Scalable Hashing) → 데이터 배치 알고리즘
