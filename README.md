@@ -15,7 +15,11 @@
 - Block Storage (AWS EBS와 유사)
 - File System (CephFS)
 
-🔹 2. Ceph 설치 및 실습<br/><br/>
+
+<br/><br/>
+
+
+🔹 2. Ceph 설치 및 실습<br/>
 ✔ 로컬 환경에서 Ceph 클러스터 구축 (싱글 노드)
 - Vagrant + VirtualBox를 활용한 가상 환경 구축
 - Docker + Ceph 컨테이너 환경 활용
@@ -63,7 +67,6 @@ Ceph를 활용한 개발을 위해 API 및 백엔드 연동 방법을 학습필�
 
 🔹 5. 실제 서비스와 Ceph 연동<br/>
 실무용 Ceph를 백엔드 개발과 연결하는 방법을 숙지필요<br/>
-
 ✔ 실제 서비스에서 Ceph 사용 사례
 - OpenStack과 Ceph 연동 (Cinder, Glance, Nova)
 - Kubernetes에서 Ceph RBD 및 CephFS 활용
