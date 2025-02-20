@@ -14,6 +14,10 @@ Ceph는 확장성이 뛰어나고 내결함성을 갖춘 오픈소스 분산 스
 <br/><br/>
 
 # 🔥 About Ceph <br/>
+> ref : https://computing-jhson.tistory.com/112
+![Screenshot 2025-02-21 at 12 48 40 AM](https://github.com/user-attachments/assets/3c1456f3-c247-4a88-abbe-8399e514d2af)
+![Screenshot 2025-02-21 at 12 48 26 AM](https://github.com/user-attachments/assets/a10834e0-7a0e-4cb5-b713-b1b442827fc7)
+
 1. Monitors(모니터, ceph-mon)<br/>
  ```
    ceph 클러스터의 전체 상태를 관리 > map(클러스터의 구성정보 저장)으로 관리
