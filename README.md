@@ -56,6 +56,47 @@ Ceph는 확장성이 뛰어나고 내결함성을 갖춘 오픈소스 분산 스
     !! CRUSH 맵을 직접 수정하여 커스텀 데이터 배치 전략을 구현할 수도 있다.
  ```
 
+6. RADOS
+```
+  Ceph의 핵심 분산 스토리지 엔진.
+  모든 interface들이 최종적으로 RADOS를 호출. -> libRADOS, RADOSGW(RADOS Gateway), RBD(RADOS Block Device), CephFS(Ceph File System)
+
+  1) Object storage -> libRADOS, RADOSGW
+  2) Block storage  -> RBD
+  3) File storage   -> CephFS
+```
+
+7. LIBRADOS
+```
+  ✔ RADOS 시스템에 개발자가 직접 접근할 수 있는 library.
+  ✔ RADOS의 가장 기본적인 interface로 RBD, RADOSGW의 기반.
+  즉, Ceph의 object storage interface.
+  이를통해 사용자는 Ceph에 RADOS object를 저장/읽기를 한다.
+```
+
+8. RADOSGW(gateway)
+```
+ ✔ RADOS에 접근할 수 있는 RESTfull HTTP API를 제공하는 서비스(HTTP 서버).
+ ✔ 이것 또한 libRADOS와 마찬가지로 object storage interface로서, 사용자가 RADOS object를 저장할 혹은 읽어올 수 있다
+   (aws의 S3, OpenStack의 Swift와 호환되는 API도 제공)
+```
+
+9. RBD
+```
+  ✔ RADOS 상에 block device image를 만들 수 있도록 제공하는 서비스.
+  ✔ 클라우드(openstack 등) 상 가상머신의 image로 활용된다.
+  
+```
+
+10. CephFS
+```
+  ✔ CephFS는 Object Storage인 RADOS 상에 File system을 사용할 수 있도록 제공하는 서비스.
+  ✔ POSIX와 호환되는 API를 제공.
+  ✔ 일반 사용자는 CephFS를 통해 파일을 폴더 단위로 계층적으로 관리.
+  다만 File system을 사용하기 위해서는 폴더 계층 정보를 저장해야 하기에 추가적으로 MDS(Metadata server)가 Ceph 클러스터에 포함되어야 한다.
+```
+
+<br/><br/>
 # 🚀 Ceph 학습 로드맵<br/>
 
 🔹 1. Ceph 개념 이해<br/>
