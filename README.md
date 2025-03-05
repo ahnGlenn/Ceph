@@ -11,7 +11,7 @@ Ceph는 확장성이 뛰어나고 내결함성을 갖춘 오픈소스 분산 스
     !!! 따라서 (file, object, block)이 들어와도 RADOS를 통해 RADOS ojbect포맷으로 변환되어 ceph에 저장됨.
   ```
 
-<br/><br/>
+<br/><br/> 
 
 # 🔥 About Ceph <br/>
 > ref : https://computing-jhson.tistory.com/112<br/>
